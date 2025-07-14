@@ -11,64 +11,121 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Products</li>
-                <li>Contact</li>
-            </ul>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Fen Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                     <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" 
+                        aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
-    <div> <!-- Products Div -->
-       <div> <!--Tropical Beach Umbrella-->
-        <h3>Tropical Beach Umbrella</h3>
-        <img src="/images/umbrella.jpg" alt="Tropical Beach Umbrella">
-        <p> Stay shaded in style with this vibrant 7-foot beach umbrella. 
-            Features UV protection, wind vent, and a sturdy sand anchor. 
-            Perfect for sunny days by the shore.</p>
-       </div>
-       <div> <!--Beach Towel-->
-        <h3>Beach Towel</h3>
-        <img src="/images/towel.jpg" alt="Beach Towel">
-        <p> Soft and absorbent, this oversized beach towel is perfect for lounging 
+
+    <div class="container text-center">  <!-- Products Div -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100" style="width: 18rem;"> <!--Tropical Beach Umbrella-->
+            <img src="/images/umbrella.png" class="card-img-top" alt="Tropical Beach Umbrella">
+            <div class="card-body">
+                <h5 class="card-title">Tropical Beach Umbrella</h5>
+                <p class="card-text">Stay shaded in style with this vibrant 7-foot beach umbrella. 
+                Features UV protection, wind vent, and a sturdy sand anchor. 
+                Perfect for sunny days by the shore.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card  h-100" style="width: 18rem;"> <!--Beach Towel-->
+            <img src="/images/towel.png" class="card-img-top" alt="Beach Towel">
+            <div class="card-body">
+                <h5 class="card-title">Beach Towel</h5>
+                <p class="card-text">Soft and absorbent, this oversized beach towel is perfect for lounging 
             by the water. Made from 100% cotton, it features a fun tropical print.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
         </div>
-        <div> <!--Sunglasses-->
-        <h3>Sunglasses</h3>     
-        <img src="/images/sunglasses.jpeg" alt="Sunglasses">
-        <p> Protect your eyes in style with these trendy polarized sunglasses. 
-            Designed for comfort and clarity, they are perfect for any beach day.</p>   
+    </div>
+    <div class="col">
+         <div class="card  h-100" style="width: 18rem;"> <!--Sunglasses-->
+            <img src="/images/sunglasses.jpeg" class="card-img-top" alt="Sunglasses">
+            <div class="card-body">
+                <h5 class="card-title">Beach Towel</h5>
+                <p class="card-text">Protect your eyes in style with these trendy polarized sunglasses. 
+            Designed for comfort and clarity, they are perfect for any beach day.</p> <br>
+            
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
         </div>
-        <div> <!--Beach Bag-->
-        <h3>Beach Bag</h3>
-        <img src="/images/beach-bag.jpg" alt="Beach Bag">
-        <p> This spacious beach bag is perfect for carrying all your essentials. 
+    </div>
+    </div>  <!-- End of Row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+         <div class="card h-100" style="width: 18rem;"> <!--Beach Bag-->
+            <img src="/images/beach-bag.jpg" class="card-img-top" alt="Beach Bag">
+            <div class="card-body">
+                <h5 class="card-title">Beach Bag</h5>
+                <p class="card-text">This spacious beach bag is perfect for carrying all your essentials. 
             Made from durable materials, it features a fun tropical design and plenty of room 
-            for towels, sunscreen, and more.</p>
+            for more.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
         </div>
-        <div> <!--Waterproof Dry Bag-->
-            <h3>Waterproof Dry Bag</h3>
-            <img src="/images/accessories.png" alt="Waterproof Dry Bag">
-            <p> Keep your phone, keys, and towels dry with this 10L waterproof dry bag. 
-                Comes with a shoulder strap and roll-top closure. Ideal for swimming or kayaking.</p>
+    </div>
+    <div class="col">
+         <div class="card h-100" style="width: 18rem;"> <!--Waterproof Dry Bag-->
+            <img src="/images/accessories.png" class="card-img-top" alt="Waterproof Dry Bag">
+            <div class="card-body">
+                <h5 class="card-title">Waterproof Dry Bag</h5>
+                <p class="card-text">Keep your phone, keys, and towels dry with this 10L waterproof dry bag. 
+            Comes with a shoulder strap and roll-top closure. Ideal for swimming or kayaking.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
         </div>
-        <div> <!--Floating Bluetooth Speaker-->
-            <h3>Floating Bluetooth Speaker</h3>
-            <img src="/images/speaker.jpg" alt="Floating Bluetooth Speaker">
-            <p> Enjoy your favorite tunes by the pool or beach with this waterproof 
-                floating Bluetooth speaker. 
-                Features a long battery life and high-quality sound.</p>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="width: 18rem;"> <!--Floating Bluetooth Speaker-->
+            <img src="/images/speaker.jpg" class="card-img-top" alt="Floating Bluetooth Speaker">
+            <div class="card-body">
+                <h5 class="card-title">Floating Bluetooth Speaker</h5>
+                <p class="card-text">Enjoy your favorite tunes by the pool or beach with this waterproof 
+            floating Bluetooth speaker. 
+            Features a long battery life and high-quality sound.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+            </div>
         </div>
-    <footer>
-        <p>All Rights Reserved</p>
-        <p>© 2025 Fen Online Store</p>
-        <p>Follow us on social media</p>
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-</body>
+    </div>
+    </div>  <!-- End of Row -->
+    </div> <!-- End of Products Div -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    All Rights Reserved
+    <a class="text-white text-decoration-none" href="#">© 2025 Fen Online Store</a>
+  </div>
+</footer>
+ </body>
 </html>

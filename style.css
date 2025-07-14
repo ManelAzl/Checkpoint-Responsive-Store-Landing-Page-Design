@@ -1,0 +1,41 @@
+.btn-primary {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+}
+.btn-primary:hover {
+  background-color: #e05555;
+  border-color: #e05555;
+}
+
+.btn-outline-success {
+  color: #2E86AB;
+  border-color: #2E86AB;
+}
+.btn-outline-success:hover {
+  background-color: #2E86AB;
+  color: white;
+}
+.card {
+  border: 1px solid #F5E6CA;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(46, 134, 171, 0.1);
+}
+body {
+  background-color: #F5E6CA;
+}
+
+footer {
+  background-color: #2E86AB !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+.footer-text {
+  color: white;
+  text-align: center;
+ 
+}
